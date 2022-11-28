@@ -3,7 +3,9 @@ import Box from '@mui/material/Box';
 import { Container } from '@mui/system';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-// import DisplayProjectCard from './components/DisplayProjectCard';
+import DisplayProjectCard from '../../components/DisplayProjectCard';
+import MyStory from '../../components/MyStory';
+
 
 
 const About = () => {
@@ -49,18 +51,19 @@ const About = () => {
                 </Card>
                 </Grid>
             </Grid>
-            <Box>
+            <Box
+            sx={{ml:2}}>
                 <div class="current-project">
                     <div class="project">
                         <h3 class="project-heading">Current Project</h3>
                         <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus hic at provident dolore cumque!</p>
                     </div> 
-                    {/* <DisplayProjectCard/> */}
+                    <DisplayProjectCard/>
                 </div>
             </Box>
-            {/* CREATE A MYSTORY COMPONENT TO PASS RIGHT HERE */}
-
+            <MyStory sx={{ml:4}}/>
         </Box>
+
         
     </>
     )

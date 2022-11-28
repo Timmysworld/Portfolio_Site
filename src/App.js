@@ -6,6 +6,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+// import Footer from './components/Footer';
 
 
 function App() {
@@ -14,10 +15,12 @@ function App() {
       <header className="App-header">
           <Navbar/>
       </header>
+      <main>
       <Routes>
           <Route path='/' element={<Main/>}/>
       </Routes>
-
+      </main>
+      {/* <Footer/> */}
     </div>
   );
 }

@@ -46,7 +46,7 @@ hr{
 }
 /* ABOUT.jsx */
 
-.about-header, .blog-header{
+.about-header, .blog-header, .contact-header, .project-header{
   color: #f1cf63;
   /* background-color: #343434; */
   text-align: center;
@@ -185,27 +185,6 @@ a{
     display: none;
   }
 } */
-/* 
-<div className="about section">
 
 
 
-<div class="project-section">
-    <div class="current-project">
-        <div class="project">
-        <h3 class="project-heading">Current Project</h3>
-        <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus hic at provident dolore cumque!</p>
-        {/* <a href="#">View</a> | <a href="#">Github</a> */
-        /* </div>
-        <div class="project-img">
-            <figure>
-                <svg style={{width:720, height: 400 }}xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"></rect>
-                <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
-                </svg>
-            </figure>
-        </div>
-    </div>
-</div>
-</div> */ 

@@ -1,11 +1,14 @@
-import * as React from 'react';
+import React from 'react'
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Box } from '@mui/system';
 
-function DisplayProjectCard(props) {
+const MyStory = () => {
     return (
-    <Card elevation={0}
+        <Box
+        sx={{display: "flex", ml: 4}}>
+        <Card elevation={0}
             sx={{ maxWidth: 645, 
             backgroundColor: "transparent" }}>
             <CardActionArea>
@@ -22,13 +25,21 @@ function DisplayProjectCard(props) {
             </CardActionArea>
         <CardActions sx={{ml: 20}}>
         <Button size="small" color="primary">
-            View 
+            LinkedIn 
         </Button> |
         <Button size="small" color="primary">
-            Github 
+            Gmail  
         </Button>
         </CardActions>
     </Card>
-    );
+    <div class="current-project">
+        <div class="project">
+            <h3 class="project-heading">This Me & I am He </h3>
+            <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus hic at provident dolore cumque!</p>
+        </div> 
+    </div>
+    </Box>
+    )
 }
-export default DisplayProjectCard
+
+export default MyStory
