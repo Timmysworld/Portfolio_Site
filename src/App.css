@@ -1,38 +1,211 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR.jsx  */
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul{
+  display: flex;
+  list-style: none;
+}
+ul li{
+  padding: 10px;
+}
+
+/* Main.jsx */
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  min-height: 70vh;
+}
+hr{
+  width: 40%;
+}
+.quote-of-the-day{
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
+/* ABOUT.jsx */
+
+.about-header, .blog-header{
+  color: #f1cf63;
+  /* background-color: #343434; */
+  text-align: center;
+  font-family: 'Poppins';
+  line-height: 2.5rem;
+  padding-top: 5px;
+  padding-bottom: 11px    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.the{
+  margin-left: 40px;
+  font-size: 1.4em ;
+  font-family: Playfair Display;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dod-rl{
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.1em;
+}
+
+.dod-of{
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.5em;
+  vertical-align: middle;
+  margin-top: -0.4em;
+  display: inline-block;
+}
+.skills{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+/* .skill-card{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px 15px 10px 15px;
+  padding: 5px;
+  border: 2px solid black;
+} */
+.text{
+  text-align: left;
+}
+/* PROJECT SECTION */
+/* current-project */
+.current-project{
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.project, .other-projects{
+  padding: 15px;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.project-heading, .other-projects, .bio-heading{
+  font-size: 1.5rem;
+}
+.project-info{
+  margin: 20px;
+}
+figure{
+  padding: 15px;
+}
+a{
+  padding:7.5px;
+}
+
+/* MYSTORY-SECTION */
+.mystory{
+  display: flex;
+}
+
+.biography{
+  padding: 10px;
+  margin: 15px;
+}
+
+.bio-info{
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.blog{
+  background-color: white;
+}
+.wfd{
+  margin-left: 60px;
+}
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 768.1px) and (max-width: 850px) {
+  .quote-of-the-day h6{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 75px 0 75px;
   }
-  to {
-    transform: rotate(360deg);
+  .welcome-section h4{
+    font-size: 1.25rem;;
   }
 }
+
+@media (min-width: 850.1px) and (max-width: 1050px){
+  .quote-of-the-day h6{
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 75px 0 75px;
+  }
+  .welcome-section h1{
+    font-size: 5.5rem;
+  }
+  .welcome-section h4{
+    font-size: 1.25rem;;
+  }
+
+
+}
+@media (max-width: 768px){
+  .quote-of-the-day h6{
+    /* font-size: 1.6rem; */
+    text-align: center;
+    margin: 0 75px 0 75px;
+  }
+  .welcome-section h1{
+    font-size: 4.5rem;
+  }
+  .welcome-section h4{
+    font-size: 1.25rem;;
+  }
+}
+/* @media (max-width:390px){
+  .skill-card{
+    display: none;
+  }
+} */
+/* 
+<div className="about section">
+
+
+
+<div class="project-section">
+    <div class="current-project">
+        <div class="project">
+        <h3 class="project-heading">Current Project</h3>
+        <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus hic at provident dolore cumque!</p>
+        {/* <a href="#">View</a> | <a href="#">Github</a> */
+        /* </div>
+        <div class="project-img">
+            <figure>
+                <svg style={{width:720, height: 400 }}xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
+                </svg>
+            </figure>
+        </div>
+    </div>
+</div>
+</div> */ 
