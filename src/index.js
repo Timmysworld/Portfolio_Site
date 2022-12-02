@@ -21,10 +21,10 @@ root.render(
     <App/>
     <Routes>
       {/* <Route path='/' element={<App/>}> */}
-            <Route path='about' element={<About/>}/>
-            <Route path='projects' element={<Projects/>}/>
-            <Route path='blogs' element={<Blogs/>}/>
-            <Route path='contact' element={<Contact/>}/>
+            <Route path='/About' element={<About/>}/>
+            <Route path='/Projects' element={<Projects/>}/>
+            <Route path='/Blogs' element={<Blogs/>}/>
+            <Route path='/Contact' element={<Contact/>}/>
       {/* </Route>     */}
       </Routes>
     </BrowserRouter>

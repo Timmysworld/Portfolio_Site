@@ -55,7 +55,7 @@ const container = window !== undefined ? () => window().document.body : undefine
 
 return (
     <Box sx={{ display: 'flex' }}>
-    <AppBar component="nav" sx={{ background: "none" }} elevation={0}>
+    <AppBar color="transparent" component="nav" sx={{ background: "none", backdropFilter:"blur(20px)" }} elevation={0}>
         <Toolbar> {/* Tool bar give appbar its spacing  */}
             <IconButton
             color="inherit"
