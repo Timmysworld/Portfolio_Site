@@ -8,23 +8,27 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import About from './pages/About/About';
-import Projects from './pages/Projects/Projects';
-import Blogs from './pages/Blog/Blogs';
-import Contact from './pages/Contact/Contact';
+// import Main from './components/Main';
+// import About from './pages/About/About';
+import About from './components/pages/About/About'
+import Projects from './components/pages/Projects/Projects';
+import Blogs from './components/pages/Blog/Blogs';
+import Contact from './components/pages/Contact/Contact';
+import Navbar from './components/Navbar'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <App/>
+    {/* <App/> */}
+    <Navbar/>
     <Routes>
-      {/* <Route path='/' element={<App/>}> */}
-            <Route path='/About' element={<About/>}/>
-            <Route path='/Projects' element={<Projects/>}/>
-            <Route path='/Blogs' element={<Blogs/>}/>
-            <Route path='/Contact' element={<Contact/>}/>
+      <Route path='/' element={<App/>}/>
+          <Route path='about' element={<About/>}/>
+          <Route path='projects' element={<Projects/>}/>
+          <Route path='blogs' element={<Blogs/>}/>
+          <Route path='contact' element={<Contact/>}/>
       {/* </Route>     */}
       </Routes>
     </BrowserRouter>
