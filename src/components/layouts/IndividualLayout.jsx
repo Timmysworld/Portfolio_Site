@@ -3,20 +3,16 @@
 // {{H1 : PROJECT/BLOG TITLE }}
 // SIDEBAR ( TABLE OF CONTENTS) {COMPONENT}
 //MAIN SECTION DIV {{GET ONE DESCRIPTION}}</DIV>
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+// import Sidebar from './../Sidebar'
 
 
-const IndividualLayout = (props) => {
-    const {title, setTitle, subtitle, setSubTitle, list,setList} = props;
+
+const IndividualLayout = ({title, subTitle, whole}) => {
+
     return (
-        <div>
-            {/* <h1>{{title}}</h1>
-            <p>{{subtitle}}</p> */}
-            {
-                
-            }
-            
-        </div>
+        
+        <div> test </div>
     )
 }
 
