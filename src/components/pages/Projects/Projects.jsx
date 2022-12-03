@@ -31,3 +31,5 @@ const Projects = () => {
 }
 
 export default Projects
+
+//things to think about: how to show different design on card from mainlayout, my thought process is to add more state but locally just change elements in the card but HOW? 
