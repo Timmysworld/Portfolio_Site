@@ -16,7 +16,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
-const pages = ['About', 'Projects','Blogs','Contact'];
+const pages = ['about', 'projects','blogs','contact'];
 
 function DrawerAppBar(props) {
     
@@ -78,13 +78,13 @@ return (
         </Typography>
         {/* handles the collapse of the navItems */}
         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {pages.map((item) => (
+            {pages.map((page) => (
             <Button 
-            key={item} 
+            key={page} 
             // onClick={() => navigate(item.route)}
             sx={{ color: 'black' }}>
-            <Link className="nav-link" to={`/${item}`}>
-            {item}
+            <Link className="nav-link" to={`/${page}`}>
+            {page}
             </Link>
             {/* {item} */}
             </Button>

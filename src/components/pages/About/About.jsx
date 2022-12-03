@@ -3,8 +3,8 @@ import Box from '@mui/material/Box';
 import { Container } from '@mui/system';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import DisplayProjectCard from '../../components/DisplayProjectCard';
-import MyStory from '../../components/MyStory';
+import DisplayProjectCard from '../../DisplayProjectCard';
+import MyStory from '../../MyStory'
 
 
 
