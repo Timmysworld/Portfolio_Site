@@ -3,6 +3,8 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { Box } from '@mui/system';
+import Contact from './Contact';
+
 
 const MyStory = () => {
     return (
@@ -24,7 +26,7 @@ const MyStory = () => {
                 </svg>
         />
             </CardActionArea>
-        <CardActions sx={{ml: 10}}>
+        <CardActions sx={{justifyContent:'center'}}>
         <a href="https://www.linkedin.com/in/timothy-singleton/"><Button size="small" color="primary">
             LinkedIn 
         </Button></a> |
@@ -37,7 +39,9 @@ const MyStory = () => {
             <h3 class="myStory-heading">Welcome to my World, well the thoughts in my head lol </h3>
             <p class="myStory-info">Most people have unique stories at how the discovered their passions.  Well minds happen because of curiousity. It true curiousity kills the cat SIKE, it woke her up. I'm veteran, a firefighter and now a Software Developer.  I bring clear clean cut, structured, and fun designs to all my projects.</p>
         </div> 
+        <Contact/>
     </div>
+    
     </Box>
     )
 }
