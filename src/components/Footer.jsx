@@ -12,7 +12,9 @@ const Footer = () => {
                 <Container className="footer"
                 maxWidth="xl"
                 sx={{
-                    display:"flex",justifyContent:"space-between",alignItems: "center",
+                    display:"flex",
+                    justifyContent:"space-between",
+                    alignItems: "center",
                 }}>
                 <div>
                 <p>&copy; - Designed and Developed by Timothy Singleton</p>
@@ -22,17 +24,12 @@ const Footer = () => {
                 <p>Built with<span> React</span> and styled with <span>Material UI</span> </p>
                 
                 <div className="icons">
-                <GitHubIcon/>
-                <LinkedInIcon/>
-                <EmailIcon/>
+                <a href="https://github.com/Timmysworld"><GitHubIcon/></a>
+                <a href="https://www.linkedin.com/in/timothy-singleton/"><LinkedInIcon/></a>
+                <a href="mailto:txsingleton89@gmail.com?subject=I would like to hire you!"><EmailIcon/></a>
                 </div>
                 </div>
-
                 </Container>
-
-
-        
-        
     )
 }
 
