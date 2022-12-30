@@ -3,24 +3,24 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
+
 function DisplayProjectCard(props) {
     return (
     <Card elevation={0}
             sx={{ maxWidth: 645, 
-            backgroundColor: "transparent" }}>
+            backgroundColor: "transparent", p:4 }}>
             <CardActionArea>
             <CardMedia
                 component="img"
+                title="My Next Promo App landing page"
                 height="240"
                 width="440"
-                image= <svg style={{width:720, height: 400 }}xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"></rect>
-                <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
-                </svg>
+                image="src/static/images/MyNextPromoApp.png"
+                alt="Home page of My Next Promo App"
+                
         />
             </CardActionArea>
-        <CardActions sx={{ml: 20}}>
+        <CardActions sx={{ml: 12}}>
         <Button size="small" color="primary">
             View 
         </Button> |
