@@ -31,17 +31,27 @@ const drawer = (
 
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
     <Typography variant="h6" sx={{ my: 2 }}>
-        TIMMY'S WORLD 
+        <Link className="nav-link" to={'/'}>
+            TIMMY'S WORLD 
+        </Link>
     </Typography>
     <Divider />
-    <List>
-        {pages.map((item) => (
+    <List
+    sx={{ 
+        display: 'flex',
+        flexDirection: 'column'
+        }}>
+        {pages.map((page) => (
             <ListItem
-            key={item} disablePadding
-            onClick={() =>(item)} >
+            key={page} 
+            disablePadding
+            >
                 <ListItemButton 
-                sx={{ textAlign: 'center' }}>
-                <ListItemText primary={item} />
+                sx={{ 
+                    textAlign: 'center'
+                }}>
+                <Link className='nav-link' to={`/${page}`}>
+                <ListItemText primary={page}/></Link>
                 </ListItemButton>
             </ListItem>
         ))}
