@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Box from '@mui/material/Box';
 import { Container } from '@mui/system'
 import MainLayout from '../../layouts/MainLayout'
+import Contact from '../../Contact';
 
 // const Item = styled(Paper)(({ theme }) => ({
 //     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,6 +19,7 @@ const Projects = () => {
     const [summary, setSummary] = useState("Lorem daskhjfgsdijgdklsgfjioejasdklnvirjgsdjfgdsgjiopr..")
 
     return (
+        <>
         <Box
         mt={10}
         sx={{Height: 100}}>
@@ -27,6 +29,8 @@ const Projects = () => {
         </Container>
         <MainLayout title={title}/>
         </Box>
+        <Contact/>
+        </>
     )
 }
 
