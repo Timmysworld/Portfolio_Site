@@ -1,22 +1,38 @@
 import React from 'react'
-import Paper from '@mui/material/Paper';
 import { Container } from '@mui/system';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+
+
 
 const Footer = () => {
+    
     return (
-        <Paper sx={{background:"none", marginTop: 'calc(100vh + 60px)',
-        width: '100%',
-        position: 'fixed',
-        bottom: 0
-        }} component="footer" square variant="outlined">
-            <hr/>
-            <Container>
+                <Container className="footer"
+                maxWidth="xl"
+                sx={{
+                    display:"flex",justifyContent:"space-between",alignItems: "center",
+                }}>
                 <div>
                 <p>&copy; - Designed and Developed by Timothy Singleton</p>
-                <p>Built with React and styled with Material UI </p>
                 </div>
-            </Container>
-        </Paper>
+
+                <div>
+                <p>Built with<span> React</span> and styled with <span>Material UI</span> </p>
+                
+                <div className="icons">
+                <GitHubIcon/>
+                <LinkedInIcon/>
+                <EmailIcon/>
+                </div>
+                </div>
+
+                </Container>
+
+
+        
+        
     )
 }
 
