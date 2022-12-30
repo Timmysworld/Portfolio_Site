@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
 
 /* NAVBAR.jsx  */
 .navigation{
@@ -16,6 +19,7 @@ ul{
 }
 ul li{
   padding: 10px;
+  
 }
 
 /* Main.jsx */
@@ -32,6 +36,7 @@ ul li{
   align-items: center;
   text-align: center;
   min-height: 70vh;
+
 }
 hr{
   width: 40%;
@@ -56,6 +61,10 @@ hr{
   padding-bottom: 11px    
 }
 
+.sub-heading{
+  font-weight: 300;
+}
+
 .the{
   margin-left: 40px;
   font-size: 1.4em ;
@@ -77,38 +86,42 @@ hr{
   margin-top: -0.4em;
   display: inline-block;
 }
-.skills{
+.skill-card{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 10px;
 }
-/* .skill-card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 15px 10px 15px;
-  padding: 5px;
-  border: 2px solid black;
-} */
+
 .text{
   text-align: left;
+  font-weight: 300;
 }
 /* PROJECT SECTION */
 /* current-project */
-.current-project{
+.current-project, .myStoryBox{
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.project, .other-projects{
+.project, .other-projects, .myStory{
   padding: 15px;
   margin: 20px;
+  width:50%
 }
 
-.project-heading, .other-projects, .bio-heading{
+.project-heading, .other-projects, .bio-heading, .myStory-heading{
   font-size: 1.5rem;
 }
-.project-info{
+.project-info, .myStory-info{
   margin: 20px;
+  font-weight: 300;
+}
+.project-info span{
+  font-weight: 600;
 }
 figure{
   padding: 15px;
@@ -141,6 +154,25 @@ a{
 .mainLayout-title{
   margin-bottom: 15px;
 }
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  max-width: 100%;
+  background-color: white;
+  font-weight: 300;
+  margin: 0 auto;
+}
+.footer span {
+  color: #f1cf63;
+  font-weight: 500;
+}
+.icons{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 /* MEDIA QUERIES  */
 
 @media (min-width: 768.1px) and (max-width: 850px) {
@@ -152,6 +184,11 @@ a{
   .welcome-section h4{
     font-size: 1.25rem;;
   }
+  Container .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
 
 @media (min-width: 850.1px) and (max-width: 1050px){
@@ -168,6 +205,7 @@ a{
   }
 
 
+
 }
 @media (max-width: 768px){
   .quote-of-the-day h6{
@@ -181,12 +219,30 @@ a{
   .welcome-section h4{
     font-size: 1.25rem;;
   }
-}
-/* @media (max-width:390px){
-  .skill-card{
-    display: none;
+  .footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
-} */
+  .footer .icons{
+    justify-content: center;
+  }
+  .project, .myStory{
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .project-heading, .project-title{
+    text-align: center;
+  }
+  /* .myStoryBox{
+    flex-direction: column-reverse; 
+  } */
+  .myStory-info{
+    margin-bottom: 55px;
+  }
+}
+
 
 
 
