@@ -20,7 +20,9 @@ function DisplayProjectCard(props) {
                 
         />
             </CardActionArea>
-        <CardActions sx={{ml: 12}}>
+        <CardActions sx={{
+            justifyContent:'center'
+            }}>
         <Button size="small" color="primary">
             View 
         </Button> |
