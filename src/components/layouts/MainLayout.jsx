@@ -17,7 +17,7 @@ const MainLayout = ({title, subTitle, summary}) => {
     return (
       <Box
         mt={10}
-        sx={{background: "gray",Height: 100}}>
+        sx={{Height: 100}}>
 
         <Container >
             <div className='mainLayout-title'>
