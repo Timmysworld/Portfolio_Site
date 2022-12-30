@@ -14,14 +14,14 @@ import About from './components/pages/About/About'
 import Projects from './components/pages/Projects/Projects';
 import Blogs from './components/pages/Blog/Blogs';
 import Contact from './components/pages/Contact/Contact';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    {/* <App/> */}
     <Navbar/>
     <Routes>
       <Route path='/' element={<App/>}/>
@@ -29,8 +29,8 @@ root.render(
           <Route path='projects' element={<Projects/>}/>
           <Route path='blogs' element={<Blogs/>}/>
           <Route path='contact' element={<Contact/>}/>
-      {/* </Route>     */}
       </Routes>
+      <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );
