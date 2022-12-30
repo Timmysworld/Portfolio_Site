@@ -14,7 +14,7 @@ const Main = () => {
                 </Typography>
                 <Typography 
                 variant="h1" 
-                sx={{fontWeight: 900, fontFamily: "poppins"
+                sx={{fontWeight: 900, fontFamily: "poppins", color: '#f1cf63'
                 }}>
                 TIMMY'S WORLD
                 </Typography>
@@ -22,7 +22,7 @@ const Main = () => {
             <Typography 
             variant='h4'
             sx={{fontWeight: 200}}>
-            FULL STACK WEB DEVELOPER
+            FULL STACK SOFTWARE DEVELOPER
             </Typography>
             </div>
             <div className="quote-of-the-day">
@@ -30,7 +30,7 @@ const Main = () => {
                 variant='h6'
                 sx={{fontWeight:300, fontFamily:"Montserrat"}}
                 >
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, explicabo".
+                "It is more blessed to give love than to receive, as God always gives love".
                 </Typography>
             </div>
         </div>
