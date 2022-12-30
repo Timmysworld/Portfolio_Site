@@ -13,7 +13,7 @@ const Blog = () => {
     return (
         <Box
             mt={10}
-            sx={{background: "gray"}}>
+            >
             <Container className="blog-header">
                 <p class="the">The</p>
                 <h2 class="dod-rl wfd">Writings <span class="dod-of">from a</span> DEVELOPER</h2> 
