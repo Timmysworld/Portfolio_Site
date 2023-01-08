@@ -225,6 +225,32 @@ a{
   border: 1px solid #f5eee6;
   line-height: 47px;
 }
+.form-box-title{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.line-left{
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 40%;
+}
+.split-right{
+  position: absolute;
+  right: 9px;
+  top: 34%;
+}
+.line-right{
+  writing-mode: vertical-rl;
+}
+
 
 /* MEDIA QUERIES  */
 
