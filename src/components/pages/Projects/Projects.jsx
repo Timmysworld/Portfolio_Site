@@ -14,7 +14,7 @@ import Contact from '../../Contact';
 
 const Projects = () => {
 
-    const [title, setTitle] = useState("Test Title")
+    const [title, setTitle] = useState("Coming Soon!!")
     const [subTitle, setSubtitle] = useState("Lorem ipsss yyyyyyyy")
     const [summary, setSummary] = useState("Lorem daskhjfgsdijgdklsgfjioejasdklnvirjgsdjfgdsgjiopr..")
 
@@ -30,6 +30,7 @@ const Projects = () => {
         <MainLayout title={title}/>
         </Box>
         <Contact/>
+        
         </>
     )
 }
