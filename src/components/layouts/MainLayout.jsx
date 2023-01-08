@@ -35,7 +35,7 @@ const MainLayout = ({title, subTitle, summary}) => {
                           <h1>{title}</h1> 
                           <img alt='PLACEHOLDER'sx={{width:100, height:50}}></img>
                           <p>{summary}</p>
-                          <p>Length of Read</p>
+                          <p></p>
                           </Card>
                         </Grid>
                     ))}

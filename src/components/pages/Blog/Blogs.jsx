@@ -4,9 +4,9 @@ import Box from '@mui/material/Box';
 import MainLayout from '../../layouts/MainLayout'
 
 const Blog = () => {
-    const [title, setTitle] = useState("Test Title")
-    const [subTitle, setSubtitle] = useState("Lorem ipsss yyyyyyyy")
-    const [summary, setSummary] = useState("Lorem daskhjfgsdijgdklsgfjioejasdklnvirjgsdjfgdsgjiopr..")
+    const [title, setTitle] = useState("Coming Soon!!")
+    const [subTitle, setSubtitle] = useState("")
+    const [summary, setSummary] = useState("")
 
         // axios get one blog -> setTitle(res.data.title) setSubtitle(res.data.summary) 
 
